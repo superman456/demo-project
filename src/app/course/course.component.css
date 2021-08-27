@@ -1,0 +1,10 @@
+.customDiv{
+    margin:5px;
+    min-height: 200px;
+    text-align: center;
+    font-size: large;
+}
+.price{
+    font-weight: 500;
+    color: cornflowerblue;
+}

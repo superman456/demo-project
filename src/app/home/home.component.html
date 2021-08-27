@@ -1,0 +1,85 @@
+<!-- <h2 class="heading"> Currency & Exchange Rates</h2>
+<div class="row">
+    <div class="col-6">
+        <input type="text" class="form-control" [(ngModel)]="base" (blur)="changeCurrecny()" placeholder="Base Currency">
+    </div>
+    <div class="col-6"> 
+        <input type="date" class="form-control"  [(ngModel)]="date" placeholder="Date">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6"></div>
+    <div class="col-6"> <button class="btn btn-primary btn-lg mt-1 p-1" (click)="changedate()">change date</button></div>
+</div>
+<div class="main">
+    <div class="table-container">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Sl No
+                    </th>
+                    <th>
+                        Currency ID
+                    </th>
+                    <th>
+                        Exchange Rates
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let res of result;let i=index">
+                    <td data-label="id">{{i+1}}</td>
+                    <td data-label="currency Id">{{res[0]}}</td>
+                    <td data-label="Exchange rates">{{res[1]}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+<div class="container">
+    <h2 class="heading"> Currency & Exchange Rates</h2>
+    <div class="row">
+        <div class="col-6">
+            <input type="text" class="form-control" [(ngModel)]="base" (blur)="changeCurrecny()"
+                placeholder="Base Currency">
+        </div>
+        <div class="col-6">
+            <input type="date" class="form-control" [(ngModel)]="date" placeholder="Date">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"> <button class="btn btn-primary btn-lg mt-1 p-1" (click)="changedate()">change date</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="table-container">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Sl No
+                        </th>
+                        <th>
+                            Currency ID
+                        </th>
+                        <th>
+                            Exchange Rates
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let res of result;let i=index">
+                        <td data-label="id">{{i+1}}</td>
+                        <td data-label="currency Id">{{res[0]}}</td>
+                        <td data-label="Exchange rates">{{res[1]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
