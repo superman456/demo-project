@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <select name="department"  class="form-control" [(ngModel)]="curr" (change)="onChangeCurrency()">
+                <option *ngFor="let cur of currencies" [value]="cur.name">
+                    {{cur.name}}
+                </option>
+            </select>
+        </div>
+        <div class="col-6"> 
+            <input type="date" class="form-control" [(ngModel)]="date" placeholder="Date">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"> <button class="btn btn-primary btn-lg mt-1 p-1" (click)="updatePrice()">change date</button></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4" *ngFor="let course of courses">
+            <div class="customDiv">
+                <div>
+                    Course Name: {{course.courseName}}
+                </div>
+                <div>
+                    <img [src]="course.img" >
+                </div>
+                <div>Author: {{course.name}}</div>
+                <div class="price">Price:{{course.prices}}</div>
+                <div>Currency: {{course.code}}</div>
+            </div>
+        </div>
+    </div>
+</div>
