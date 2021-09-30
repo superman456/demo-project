@@ -1,0 +1,43 @@
+img{
+    width: 400px;
+    height: 200px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+img:hover{
+    height: 250px;
+    width: 500px;
+}
+#main{
+    display: grid;
+}
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid >img{
+    margin: 1%;
+}
+
+.post{
+    border:2px solid rgb(229,158,66);
+    margin: 1%;
+    padding: 1%;
+}
+#main-body{
+    background: rgba(186,212,255,1);
+}
+
+.sidebar{
+    background: rgb(255,227,191);
+}
+.post >a{
+    text-decoration: none;
+    // margin: 0 1%;
+
+}

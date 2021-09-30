@@ -1,0 +1,26 @@
+
+<div class="inner-div">hi</div>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let user of userList"> <span class="username">{{user.name}}</span>|
+    <a class="action-link" [routerLink]="['/users/view',user.id]">View</a> |
+    <a class="action-link" [routerLink]="['/users/edit',user.id]">Edit</a> |
+    <a class="action-link" [routerLink]="['/users/delete',user.id]">Delete</a>
+  </mat-list-item>
+</mat-list>
+
+<!-- <table>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>name</th>
+      <th>imange</th>
+    </tr>
+    <tr *ngFor="let table of tableValue">
+      <td>{{ table.id }}</td>
+      <td>{{ table.type }}</td>
+      <td>{{ table.name }}</td>
+      <td>width :{{table.image.width|json  }}<br>
+        height: {{table.image.height|json}} <br>
+          {{table.image.url|json}}</td>
+    </tr>
+  </table> -->
